@@ -9,6 +9,7 @@
 
     <h2>Sum of two Numbers</h2>
     <p id="var"></p>
+    <p id="var2"></p>
 
     <script>
       document.getElementById("myH").innerHTML = "JavaScript Comments";
@@ -17,11 +18,16 @@
 
       //This is comment
 
-      var a = 515;
-      var b = 15;
-      var sum = a + b;
+      var a, b, sum;
+      a = 515;
+      b = 15;
+      sum = a + b;
 
-      document.getElementById("var").innerHTML = sum;
+      document.getElementById("var").innerHTML =
+        "Sum of " + a + "+" + b + "=" + sum;
+      document.getElementById(
+        "var2"
+      ).innerHTML = `Sum of ${a} + ${b} = ${sum} `;
     </script>
   </body>
 </html>
