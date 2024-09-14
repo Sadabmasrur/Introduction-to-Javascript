@@ -10,6 +10,9 @@
     <h2>Sum of two Numbers</h2>
     <p id="var"></p>
     <p id="var2"></p>
+    <p id="sub"></p>
+    <p id="mult"></p>
+    <p id="div"></p>
 
     <script>
       document.getElementById("myH").innerHTML = "JavaScript Comments";
@@ -18,16 +21,27 @@
 
       //This is comment
 
-      var a, b, sum;
+      var a, b, sum, sub, mult, div;
       a = 515;
       b = 15;
+
       sum = a + b;
+      sub = a - b;
+      mult = a * b;
+      div = a / b;
 
       document.getElementById("var").innerHTML =
         "Sum of " + a + "+" + b + "=" + sum;
       document.getElementById(
         "var2"
       ).innerHTML = `Sum of ${a} + ${b} = ${sum} `;
+      document.getElementById("sub").innerHTML = `Sub of ${a} - ${b} = ${sub} `;
+      document.getElementById(
+        "mult"
+      ).innerHTML = `Mult of ${a} x ${b} = ${mult} `;
+      document.getElementById(
+        "var2"
+      ).innerHTML = `Div of ${a} ÷ ${b} = ${div} `;
     </script>
   </body>
 </html>
